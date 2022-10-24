@@ -2,6 +2,7 @@ import NavStyle from '../styles/Nav.module.css'
 import Link from 'next/link'
 import {AiOutlineBlock} from "react-icons/ai"
 
+
 const Nav = () => {
   return (
     <nav className={NavStyle.nav}>
@@ -26,7 +27,7 @@ const Nav = () => {
             </li>
 
             <li className={NavStyle.Get_started}>
-                <Link href='/about'>Get Started</Link> 
+                <Link href='/Get_Started'>Get Started</Link> 
             </li>
         </div>
        
