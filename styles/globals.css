@@ -1,6 +1,6 @@
 html,
 body {
-  padding: 0;
+  padding: 3px;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -15,12 +15,20 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+h1{
+  font-size: 4.2rem;
+}
+
+
+p{
+  font-size: 2.3rem;
+}
+
+h3{
+  font-size: 1.9rem;
+  color: rgb(139, 135, 222);
+}
+
+span{
+  color: rgb(139, 135, 222);
 }
