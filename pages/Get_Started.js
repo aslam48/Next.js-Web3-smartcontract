@@ -56,9 +56,11 @@ const Get_Started = () => {
 
     useEffect(() =>{
         async function accountChanged(){
-            window.ethereum.on("accountChanged", async function () {
-                const accounts = await window.ethereum.request({method: "eth_accounts",})
-            });
+            window.ethereum.on("accountChanged", async function(){
+                const accounts = await window.ethereum.request({
+                    method: "eth_accounts",
+            })
+    
             
 
             if(accounts.length){
@@ -66,10 +68,10 @@ const Get_Started = () => {
             }else{
                 window.location.reload()
             }
+        })
         }
        accountChanged()
-
-    }, [])
+    },[])
 
   return (
     <div clasName="card-container"> 
