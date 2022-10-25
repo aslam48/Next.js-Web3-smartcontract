@@ -1,0 +1,111 @@
+.body{
+    background-image:linear-gradient(to right top,  rgb(139, 135, 222), purple);
+    font-family: montserrat, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    min-height: 90vh;
+    margin: 0;
+} 
+
+.p{
+    font-size: 14px;
+  line-height: 21px;
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+
+
+.card{
+    background-color: #231e39;
+    border-radius: 25px;
+    box-shadow: 10px 10px 15px rgb(0,0,0,0.35);
+    color: #b3b8cd;
+    padding: 30px 0 0;
+    position: relative;
+    width: 350px;
+    max-width: 100%;
+    text-align: center;
+    margin:  20px 0;
+    padding-bottom: 1.3rem;
+}
+
+.card .pro{
+color:#231e39;
+background-color: #febb0b;
+border-radius: 3px;
+font-size: 14px;
+font-weight: bold;
+padding: 3px 7px;
+position: absolute;
+top: 30px;
+left:30px;
+}
+
+.card .tick{
+    color: #231e39;
+    background-color: #febb0b;
+    border-radius: 50%;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 2px 5px;
+    top:30px;
+    left: 30px;
+    margin-left:.3rem ;
+}
+
+.buttons .primary{
+    background-color: #c400d7;
+    border: 1px solid #c400d7;
+    border-radius: 3px;
+    color: #fff;
+    font-family:500 ;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+
+
+.buttons .primary .gost{
+    background-color: transparent;
+    color: #c400d7;
+}
+
+.skill{
+     background-color: #231e39;
+     text-align: left;
+     padding: 15px;
+     margin-top: 30px;
+}
+
+
+.skill .ui{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.skill .ui .li{
+    border: 1px solid #231e39;
+    border-radius: 2px;
+    display: inline-block;
+    font-size: 12px;
+    margin: 0 7px 7px 0 ;
+    padding :7px;
+}
+
+
+
+.message{
+    position: absolute;
+    top: -30%;
+    margin-left: 0;
+    background-color: #231e39;
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 15px rgb(0,0,0,0.35);
+}

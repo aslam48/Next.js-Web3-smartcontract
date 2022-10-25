@@ -2,6 +2,7 @@ import React, { useState,useEffect } from 'react'
 import Web3Modal from "web3modal";
 import {ethers} from "ethers"
 import Image from "next/image"
+import Get from '../styles/Get_started.module.css'
 
 
 import creator from '../nft.jpg'
@@ -9,7 +10,7 @@ import imageEth from '../eth.png'
 
 
 const Get_Started = () => {
-    const [currentAccount, setCurrentAccount] = useState(" ")
+    const [currentAccount, setCurrentAccount] = useState(false)
     const [connect, setConnect] = useState(false)
     const [balance , setBalance] = useState("")
 
@@ -74,25 +75,26 @@ const Get_Started = () => {
     },[])
 
   return (
-    <div clasName="card-container"> 
-        {!currentAccount ?  " " : <span className='pro'>PRO</span>}
+    <div className={Get.body}>
+    <div className={Get.card}> 
+        {!currentAccount ?  " " : <span className={Get.pro}>PRO</span>}
         <Image src={creator} alt='profile' width={80} height={80}/>
         <h3>Check Ether</h3>
 
         {! currentAccount ? (
             <div>
-                <div className='message'> 
-                <p>{failMessage}</p>
+                <div className={Get.message}> 
+                <p className={Get.p}>{failMessage}</p>
                 </div>
                 <Image src={imageEth} alt='' width={100} height={100}/>
-                <p>Welcome to ether account balance checker</p>
+                <p >Welcome to ether account balance checker</p>
             </div>
         ) : (
             <div>
-                <h6>Verified <span className='tick'>&#10004;</span></h6>
-                <p>Ether account and balance Checker <br/> find account details</p>
-                <div className='buttons'>
-                    <button className='primary gost' onClick={() => {}}> 
+                <h6>Verified <span className={Get.tick}>&#10004;</span></h6>
+                <p className={Get.p}>Ether account and balance Checker <br/> find account details</p>
+                <div className={Get.buttons}>
+                    <button className={Get.primary} onClick={() => {}}> 
                     Ether Account Details
                     </button>
                 </div>
@@ -101,19 +103,20 @@ const Get_Started = () => {
 
         {! currentAccount && !connect ? (
             <div className='buttons'>
-                <button className='primary' onClick={() => CWallet()}> Connet Wallet</button>
+                <button className={Get.primary} onClick={() => CWallet()}> Connet Wallet</button>
             </div>
         ) : ( 
-            <div className='skills'>
-                <h6>Your Ether</h6>
-                <ul>
-                    <li>Account</li>
-                    <li>{currentAccount}</li>
-                    <li>Balance</li>
-                    <li>{balance}</li>
+            <div className={Get.skill}>
+                <h6 >Your Ether</h6>
+                <ul className={Get.ui}>
+                    <li className={Get.li}>Account</li>
+                    <li className={Get.li}>{currentAccount}</li>
+                    <li className={Get.li}>Balance</li>
+                    <li className={Get.li}>{balance}</li>
                 </ul>
             </div>
         )}
+    </div>
     </div>
   )
 }
