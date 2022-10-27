@@ -1,0 +1,47 @@
+.body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 88vh;
+    margin: 0; 
+}
+
+
+.card{
+    background-color: #231e39;
+    border-radius: 25px;
+    box-shadow: 10px 10px 15px rgb(0,0,0,0.35);
+    color: #b3b8cd;
+    padding: 30px 0 0;
+    position: relative;
+    width: 360px;
+    max-width: 100%;
+    text-align: center;
+    margin:  20px 0;
+    padding-bottom: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 565px;
+}
+
+.shift{
+    margin: 14px;
+}
+
+
+.phantom_pic{
+    position: absolute;
+    border-radius: 4px;
+    margin-bottom: -50px;
+}
+
+
+.p{
+    font-size: 1.3rem;
+  line-height: 29px;
+  width: 80%;
+ 
+}

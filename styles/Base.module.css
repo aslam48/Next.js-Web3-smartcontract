@@ -1,0 +1,15 @@
+.base {
+    display: flex;
+    flex-direction: 1fr 1fr;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+
+@media screen and (max-width:890px){
+    .base {
+        display: flex;
+        flex-direction: column;
+    }
+}

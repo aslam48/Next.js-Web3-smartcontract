@@ -4,11 +4,13 @@ import Web3Modal from "web3modal";
 import {ethers} from "ethers"
 import Image from "next/image"
 import Get from '../styles/Get_started.module.css'
-import Solana from '/pages/solana'
+
+
+
 
 
 import creator from '../nft.jpg'
-import imageEth from '../eth.png'
+import mask from '../Metamask-icon.png'
 
 const MataMask = () => {
  
@@ -82,14 +84,14 @@ const MataMask = () => {
     <div className={Get.card}> 
         {!currentAccount ?  " " : <span className={Get.pro}>PRO</span>}
         <Image src={creator} alt='profile' width={80} height={80}/>
-        <h3>Check Ether</h3>
+        <h3>Check MetaMask</h3>
 
         {! currentAccount ? (
             <div>
                 <div className={Get.message}> 
                 <p className={Get.p}>{failMessage}</p>
                 </div>
-                <Image src={imageEth} alt='' width={100} height={100}/>
+                <Image src={mask} alt='' width={100} height={100}/>
                 <p >Welcome to ether account balance checker</p>
             </div>
         ) : (
@@ -105,8 +107,8 @@ const MataMask = () => {
         ) }
 
         {! currentAccount && !connect ? (
-            <div className='buttons'>
-                <button className={Get.primary} onClick={() => CWallet()}> Connet Wallet</button>
+            <div>
+                <button className={Get.btn} onClick={() => CWallet()}> Connet Wallet</button>
             </div>
         ) : ( 
             <div className={Get.skill}>
