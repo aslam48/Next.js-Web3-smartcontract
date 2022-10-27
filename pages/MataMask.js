@@ -88,9 +88,9 @@ const MataMask = () => {
 
         {! currentAccount ? (
             <div>
-                <div className={Get.message}> 
+                {/* <div className={Get.message}> 
                 <p className={Get.p}>{failMessage}</p>
-                </div>
+                </div> */}
                 <Image src={mask} alt='' width={100} height={100}/>
                 <p >Welcome to ether account balance checker</p>
             </div>
