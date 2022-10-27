@@ -1,5 +1,5 @@
 .body{
-    background-image:linear-gradient(to right top,  rgb(139, 135, 222), purple);
+    background:white;
     font-family: montserrat, sans-serif;
     display: flex;
     align-items: center;
